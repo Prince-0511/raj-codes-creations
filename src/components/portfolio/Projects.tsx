@@ -34,7 +34,7 @@ const Projects = () => {
   ];
 
   return (
-    <section className="section-padding bg-surface">
+    <section id="projects" className="section-padding bg-surface">
       <div className="content-width">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-text-primary mb-6 animate-fade-in-up">
