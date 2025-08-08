@@ -51,7 +51,14 @@ const Hero = () => {
             <Button 
               size="lg" 
               className="bg-gradient-primary text-primary-foreground hover:shadow-glow transition-smooth px-8 py-4 text-lg"
-              onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() => {
+                const projectsSection = document.getElementById('projects');
+                if (projectsSection) {
+                  projectsSection.scrollIntoView({ behavior: 'smooth' });
+                } else {
+                  console.log('Projects section not found');
+                }
+              }}
             >
               View My Work
             </Button>
